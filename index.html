@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariah Sidney Bellaflor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="bg-gray-800 sticky top-0">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <button class="text-white inline-block lg:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul id="menu" class="hidden lg:flex space-x-4 ml-auto">
+                <li><a href="#landing" class="text-white duration-300 hover:text-gray-200">Home</a></li>
+                <li><a href="#gallery" class="text-white duration-300 hover:text-gray-200">About Me</a></li>
+                <li><a href="#hobbies" class="text-white duration-300 hover:text-gray-200">Resume</a></li>
+                <!-- <li><a href="https://drive.google.com/uc?export=download&id=1qj8F8jGSFDk7qXrL5R2rUbkEAQ-KkWP1" target="_blank" class="text-white hover: text-gray-200">Download My Resume</a></li> -->
+            </ul>
+        </div>
+        <div id="mobileMenu" class="lg:hidden hidden bg-gray-700">
+            <ul class="flex flex-col space-y-2 p-4">
+                <li><a href="#landing" class="text-white duration-300 hover:text-gray-200">Home</a></li>
+                <li><a href="#gallery" class="text-white duration-300 hover:text-gray-200">About Me</a></li>
+                <li><a href="#hobbies" class="text-white duration-300 hover:text-gray-200">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden'); 
+        });
+    </script>
+
+
+    <div id="landing" class="h-screen flex flex-col justify-center items-center bg-gray-100">
+        <div class = "flex justify-between items-center w-full max-w-4xl px-4">
+            <div class ="text-content">
+                <h1 class="text-4xl font-bold mb-4">Hi! I'm Mariah Sidney</h1>
+                <p class="mb-4"></p>
+            </div>
+            <img src="/images/shortdetails.png" class="h-64 w-90 object-cover">
+        </div>
+    </div>
+
+    <div id="gallery" class="h-screen flex flex-col justify-center items-center bg-gray-900 text-white">
+        <div class="container mx-auto p-8">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <div class="flex items-center">
+                <img src="/images/fullshot.jpg" class="h-48 w-48 object-cover rounded-full mb-4 mr-8"> 
+                <div>
+                    <p class="text-lg">Hello! I'm Mariah Sidney, a fresh graduate from Polytechnic University of the Philippines with a degree in Bachelor of Science in Information Technology. With a passion for technology and an aptitude for problem-solving, I'm excited to launch my career in the tech industry.</p>
+                    <br>
+                    <p class="text-lg">In the past four years, I have gained hands-on experience in web design and development, cybersecurity, and software development. I have completed projects that use the skills I learned, such as creating a database, building a simple website, and developing a simple application.</p>
+                    <br>
+                    <p class="text-lg">I'm eager to apply my knowledge and skills in a dynamic work environment to contribute to innovative projects and continue learning. In my free time, I enjoy attending workshops that I can use in my career.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="hobbies" class="h-screen flex flex-col justify-center items-center bg-gray-100">
+        <div class="container mx-auto p-8">
+            <iframe src="https://drive.google.com/file/d/1qj8F8jGSFDk7qXrL5R2rUbkEAQ-KkWP1/preview" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p class="mb-2">Connect with me:</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://github.com/mariahsidney" target="_blank" class="hover:underline">GitHub</a>
+                <a href="https://www.linkedin.com/in/mariahsidneyb/" target="_blank" class="hover:underline">LinkedIn</a>
+                <a href="mailto:mariahsidneyb@gmail.com" class="hover:underline">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
